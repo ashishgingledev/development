@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>org.example</groupId>
+        <artifactId>spring-boot-app</artifactId>
+        <version>1.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <groupId>org.example</groupId>
@@ -24,6 +24,7 @@
         <module>spring-boot-app-jpa-liquibase</module>
         <module>spring-boot-app-jbehave-integration-test</module>
         <module>spring-boot-app-querydsl</module>
+        <module>spring-boot-apps-miscllaneous</module>
     </modules>
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
    <dependencies>
