@@ -25,6 +25,7 @@
         <module>spring-boot-app-jbehave-integration-test</module>
         <module>spring-boot-app-querydsl</module>
         <module>spring-boot-apps-miscllaneous</module>
+        <module>ingleash-misc-utils</module>
     </modules>
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
    <dependencies>
