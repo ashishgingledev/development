@@ -1,23 +1,31 @@
 package com.ingleash.misc.utils;
 
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.temporal.TemporalAdjuster;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import  java.util.*;
 
 public class StringUtils {
 
     public static void main(String[] args) {
-         System.out.println(" for 11221122221111112222112211222222 :=> " + StringUtils.mostRepetativeChar("11221122221111112222112211222222"));
-        //System.out.println(" for bbbbbkkqqiiaallppppppppaajjaaazzzzzzzz :=> " + StringUtils.mostRepetativeChar("bbbbbkkqqiiaallppppppppaajjaaazzzzzzzz"));
-        //System.out.println(" for ashish :=> " + StringUtils.mostRepetativeChar("ashish"));
+        //out.println("tst class ex");
 
-        //System.out.println(" for letter :=> " + new String(StringUtils.mostRepetativeCharByJava8("letter")));
-        //System.out.println(" for bbbbbkkqqiiaallppppppppaajjaaazzzzzzzz :=> " + StringUtils.mostRepetativeCharByJava8("bbbbbkkqqiiaallppppppppaajjaaazzzzzzzz"));
-        //System.out.println(" for ashish :=> " + StringUtils.mostRepetativeCharByJava8("ashish"));
+        System.out.println(Stream.of("one", "two", "three", "four")
+                        .filter(e -> e.length() > 3)
+                         .peek(e -> System.out.println("Filtered value: " + e))
+                         .map(String::toUpperCase)
+                         .peek(e -> System.out.println("Mapped value: " + e))
+                         .collect(Collectors.toList()));
     }
 
 

@@ -6,6 +6,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>agmi-cloud-config-server</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-ribbon</module>
+        <module>spring-cloud-zuul</module>
     </modules>
     <parent>
         <groupId>org.example</groupId>

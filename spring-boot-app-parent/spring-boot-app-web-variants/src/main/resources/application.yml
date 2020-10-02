@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-boot-web-app
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    app-group-name: spring-cloud-app-suite
+    health-check-url: https://${eureka.hostname}/health
+    home-page-url: https://${eureka.hostname}/api/web/hello
+    hostname: localhost
+    non-secure-port: 8761
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
