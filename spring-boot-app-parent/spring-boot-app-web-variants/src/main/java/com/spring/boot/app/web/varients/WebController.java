@@ -23,6 +23,11 @@ public class WebController {
     private String configprop;
 
 
+    @Value("${another.property}")
+    private String common;
+
+
+
     @GetMapping("hello")
     public String hello() {
         String currentPrincipalName = "DEFAULT!";
@@ -37,5 +42,10 @@ public class WebController {
     @GetMapping("/configprop")
     public String val(){
         return configprop;
+    }
+
+    @GetMapping("/common_props")
+    public String common() {
+        return common;
     }
 }
